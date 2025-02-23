@@ -5,3 +5,4 @@ yara-python
 typing
 uuid
 datetime
+pefile
