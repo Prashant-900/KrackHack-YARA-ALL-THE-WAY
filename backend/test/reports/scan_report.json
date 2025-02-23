@@ -1,0 +1,16 @@
+[
+    {
+        "filename": "hello.exe",
+        "status": "MALICIOUS",
+        "yara_matches": [
+            "Advanced_Malware_Detection"
+        ],
+        "high_entropy_sections": []
+    },
+    {
+        "filename": "yo.exe",
+        "status": "BENIGN",
+        "yara_matches": [],
+        "high_entropy_sections": []
+    }
+]
