@@ -3,7 +3,7 @@ services:
     type: web
     env: docker
     plan: free
-    repo: https://github.com/YOUR_USERNAME/YOUR_REPO
+    repo: https://github.com/Prashant-900/KrackHack-YARA-ALL-THE-WAY
     dockerContext: ./backend
     envVars:
       - key: FLASK_ENV
