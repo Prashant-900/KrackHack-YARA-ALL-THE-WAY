@@ -1,0 +1,26 @@
+services:
+  - name: backend
+    type: web
+    env: docker
+    plan: free
+    repo: https://github.com/YOUR_USERNAME/YOUR_REPO
+    dockerContext: ./backend
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: PORT
+        value: 5000
+
+  - name: teamBeluga
+    type: web
+    env: docker
+    plan: free
+    repo: https://github.com/YOUR_USERNAME/YOUR_REPO
+    dockerContext: ./frontend
+
+  - name: nginx
+    type: web
+    env: docker
+    plan: free
+    repo: https://github.com/YOUR_USERNAME/YOUR_REPO
+    dockerContext: ./nginx
